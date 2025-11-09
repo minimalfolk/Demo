@@ -1,0 +1,159 @@
+/* Feature Description */
+.featuredesc {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+}
+
+.featuredesc p {
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.featuredesc strong {
+  font-weight: 600;
+}
+
+.featuredesc center {
+  margin: 1rem 0;
+}
+
+.Compressimage {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.featuredesc h2 {
+  color: var(--dark);
+  margin: 1.2rem 0 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.steps {
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.steps li {
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.featuredesc ul {
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.featuredesc ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.faq-item {
+  background: var(--light);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin: 1.2rem 0;
+}
+
+.faq-item h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  color: var(--dark);
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+/* Internal Links */
+.internal-links {
+  max-width: 800px;
+  margin: 1.5rem auto 0.5rem;
+  padding: 0 1rem;
+}
+
+.internal-links h2 {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.internal-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  list-style: none;
+}
+
+.internal-links a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  background: var(--light);
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  transition: var(--transition);
+  line-height: 1.2;
+  border: 1px solid var(--light-gray);
+}
+
+.internal-links a:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .featuredesc, .internal-links {
+    padding: 0 0.75rem;
+  }
+  
+  .featuredesc h2 {
+    font-size: 1rem;
+    margin: 1rem 0 0.6rem;
+  }
+  
+  .internal-links ul {
+    gap: 0.3rem;
+  }
+  
+  .internal-links a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+  }
+  
+  .faq-item {
+    padding: 0.8rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .featuredesc {
+    padding: 0 0.5rem;
+  }
+  
+  .internal-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+  }
+  
+  .internal-links a {
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem 0.3rem;
+    font-size: 0.65rem;
+  }
+}
